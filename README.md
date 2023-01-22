@@ -1,27 +1,18 @@
-Large and complex manufacturing operations rely heavily on data and customer requirements to make informed decisions. Metrology and measurement programs play a crucial role in this process, as they provide the data and information needed to ensure that products meet customer specifications and quality standards.
+Welcome to "Ohm Simulator"!
 
-Measurement is a critical aspect of metrology, as it provides the data needed to understand the performance of products and equipment. This includes things like dimensional measurements, testing for material properties, and measurements of electrical and electronic properties. Statistical analysis is used to analyze the data and identify trends, which can be used to improve processes and product design.
+"Ohm Simulator" is a powerful tool for program engineering teams working with electrical assemblies. It allows teams to simulate the measurement uncertainty of their equipment, and to visualize the results in a clear and concise way. This can help teams to make more informed decisions about how to properly guardband their tolerances, which will ultimately lead to more accurate and reliable electrical assemblies.
 
-Technical support is also an important aspect of metrology, as it provides the expertise needed to troubleshoot and resolve issues that may arise. This can include things like calibration and equipment repairs, as well as providing training and support for employees.
+The software allows you to input your measurement uncertainty data from the calibration certificate and simulate the measurements under different temperatures and frequencies. The results are displayed in charts and graphs that can help the user to visualize the uncertainty and communicate it to other stakeholders. Additionally, "Ohm Simulator" also allows you to simulate the measurement uncertainty of the equipment under different temperatures and conditions, which will help to ensure that the tolerance of the electrical assemblies are properly guard banded.
 
-In addition to metrology, manufacturing operations also need to manage a variety of other activities related to customer requirements. This includes inventory planning, supplier relationship management, and ensuring that products are delivered on time and to customer specifications.
+Please note that "Ohm Simulator" is intended for use by program engineering teams with a basic understanding of metrology and measurement. It is not intended for use by untrained individuals.
 
-Managing these activities requires a significant investment of time, money, and attention. It's important to prioritize customer requirements and dedicate resources accordingly. However, it's also important to note that sometimes manufacturers can end up dedicating a lot of time and money into areas that customers do not think is important and are low risk. For example, a customer may not see the value in a particular measurement or testing procedure, but the manufacturer may still feel it is important to perform that test to ensure that the product is of high quality. In these cases, it's important for manufacturers to strike a balance between meeting customer requirements and ensuring that the products they produce are of the highest quality.
+How to use:
 
-In conclusion, large and complex manufacturing operations must make decisions based on data and customer requirements. Metrology and measurement programs play a crucial role in this process, providing the data and information needed to ensure that products meet customer specifications and quality standards. Managing these activities requires a significant investment of time, money, and attention, and it's important for manufacturers to prioritize customer requirements and dedicate resources accordingly. However, it's also important for manufacturers to be aware of situations where they might be dedicating a lot of time and money into areas that customers do not think is important and are low risk. Striking a balance between meeting customer requirements and ensuring that the products they produce are of the highest quality, will help to ensure that products are delivered on time and to customer specifications, and that customers are satisfied with the products they receive.
-
-"Ohm Simulator" is specifically designed to help program engineering teams working with electrical assemblies to properly guardband their tolerances using the measurement uncertainty calculations from their calibration certificates. It is a software that allows teams to simulate the measurement uncertainty of their electrical equipment, such as resistance measurements, and chart it on a graph for reports.
-
-One of the key features of "Ohm Simulator" is its ability to take into account the specific characteristics of electrical assemblies. For example, it can consider factors such as resistance drift over time and temperature, which can have a significant impact on the accuracy of resistance measurements.
-
-Additionally, "Ohm Simulator" can also be used to simulate different measurement scenarios, such as measuring resistance at different temperatures or over a range of frequencies. This allows teams to better understand how the measurement uncertainty of their equipment may be affected under different conditions, and to make more informed decisions about how to properly guardband their tolerances.
-
-Overall, "Ohm Simulator" is an effective tool for program engineering teams working with electrical assemblies. It allows them to easily simulate the measurement uncertainty of their equipment, and to visualize the results in a clear and concise way. This can help teams to make more informed decisions about how to properly guardband their tolerances, which will ultimately lead to more accurate and reliable electrical assemblies.
-
-"Ohm Simulator" was built using the R programming language, specifically using the Shiny web application framework. R is a powerful and versatile language that is widely used in statistical computing and data analysis. Its extensive library of statistical and graphical tools makes it well-suited for building applications like "Ohm Simulator" that require the analysis and visualization of large amounts of data.
-
-Shiny is a web application framework for R that allows developers to create interactive web applications without the need for JavaScript or other web development languages. This makes it easy for "Ohm Simulator" users to interact with the application and view the results of their simulations in a user-friendly way.
-
-R is considered as one of the best programming languages for statistical computing and data analysis because of its powerful and flexible syntax, built-in data structures, and wide range of libraries and packages for statistical analysis, machine learning and data visualization. R also has a large and active community of developers and users, which means there is a wealth of resources and support available for those working with the language.
-
-In summary, "Ohm Simulator" was built using R and Shiny, which is a powerful combination for creating interactive web applications for statistical computing and data analysis. R, being one of the best programming languages for statistical computing, allows for the efficient handling of large datasets and the implementation of advanced statistical techniques. This makes "Ohm Simulator" a reliable and efficient tool for program engineering teams working with electrical assemblies.
+Download and install "Ohm Simulator" onto R Studio. 
+Input your measurement uncertainty data from the calibration certificate
+Simulate the measurements under different target ranges. 
+Choose your lower and higher limits for analysis
+Review the results displayed in the charts and graphs
+Print the results for auditing and record keeping. 
+Use the results to make informed decisions about how to properly guardband your tolerances
+Thank you for using "Ohm Simulator"! We hope that you find it to be a valuable tool for your work with electrical assemblies. If you have any questions or feedback, please do not hesitate to contact us.
