@@ -1,0 +1,45 @@
+ui <- fluidPage(
+  titlePanel("Temperature Coefficient of Resistance"),
+  sidebarLayout(
+    sidebarPanel(
+      textInput("instructions", "Each material will behave differently. Use a precision ohmmeter
+                to test your material at a low and high temperature. Input the results into this application 
+                and chart your slope"),
+      numericInput("Ro", "Low Resistance", value = 13.900),
+      numericInput("To", "Low Temperature", value = 28.70),
+      numericInput("RT", "High Resistance", value = 14.600),
+      numericInput("T", "High Temperature", value = 47.30),
+      actionButton("simulate", "Simulate")
+    ),
+    mainPanel(
+      textOutput("tcr_output"),
+      plotOutput("resistance_plot"),
+      dataTableOutput("resistance_table")
+    )
+  )
+)
+
+
+server <- function(input, output) {
+  
+  observeEvent(input$simulate, {
+    Ro <- input$Ro
+    To <- input$To
+    RT <- input$RT
+    T <- input$T
+    
+    TCR <- (RT - Ro) / (T - To)
+    
+    output$tcr_output <- renderText(paste0("Temperature Coefficient of Resistance (TCR): ", round(TCR, 10)))
+    
+    temperatures <- c(-50:150)
+    resistance_data <- data.frame(temperature = temperatures, 
+                                  resistance = Ro + (temperatures - To) * TCR)
+    output$resistance_plot <- renderPlot({
+      plot(resistance_data$temperature, resistance_data$resistance, type = "l")
+    })
+    output$resistance_table <- renderDataTable(resistance_data)
+  })
+}
+
+shinyApp(ui = ui, server = server)
