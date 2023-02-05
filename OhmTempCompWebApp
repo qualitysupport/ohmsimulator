@@ -2,9 +2,9 @@ ui <- fluidPage(
   titlePanel("Temperature Coefficient of Resistance"),
   sidebarLayout(
     sidebarPanel(
-      textInput("instructions", "Each material will behave differently. Use a precision ohmmeter
-                to test your material at a low and high temperature. Input the results into this application 
-                and chart your slope"),
+      p("Each material will behave differently. Use a precision ohmmeter
+        to test your material at a low and high temperature. Input the results into this application 
+        and chart your slope"),
       numericInput("Ro", "Low Resistance", value = 13.900),
       numericInput("To", "Low Temperature", value = 28.70),
       numericInput("RT", "High Resistance", value = 14.600),
@@ -21,7 +21,6 @@ ui <- fluidPage(
 
 
 server <- function(input, output) {
-  
   observeEvent(input$simulate, {
     Ro <- input$Ro
     To <- input$To
